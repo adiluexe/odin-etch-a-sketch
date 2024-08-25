@@ -16,7 +16,16 @@
     <header>etch_a_sketch</header>
     <main>
       <section class="side" id="controls">
-        <button id="new-grid">Generate New Grid</button>
+        <label id="grid-size-text" for="grid-size-slider"
+          >Grid Size: <span id="grid-size-display">16 x 16</span></label
+        >
+        <input
+          type="range"
+          id="grid-size-slider"
+          min="1"
+          max="100"
+          value="16"
+        />
       </section>
       <section id="canvas"></section>
     </main>

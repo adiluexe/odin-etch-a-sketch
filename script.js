@@ -1,11 +1,12 @@
 const canvas = document.querySelector("#canvas");
-const newGridButton = document.querySelector("#new-grid");
+const gridSizeSlider = document.querySelector("#grid-size-slider");
+const gridSizeDisplay = document.querySelector("#grid-size-display");
 
 function createGrid(size) {
   canvas.innerHTML = "";
 
   const canvasSize = canvas.clientWidth;
-  const squareSize = Math.floor(canvasSize / size);
+  const squareSize = canvasSize / size;
 
   for (let i = 0; i < size * size; i++) {
     const square = document.createElement("div");
@@ -23,8 +24,8 @@ function createGrid(size) {
 
 createGrid(16);
 
-newGridButton.addEventListener("click", () => {
-  let gridSize = prompt("Enter the number of squares per side (maximum 100):");
-  gridSize = Math.min(Math.max(parseInt(gridSize), 1), 100);
+gridSizeSlider.addEventListener("input", () => {
+  const gridSize = gridSizeSlider.value;
+  gridSizeDisplay.textContent = `${gridSize} x ${gridSize}`;
   createGrid(gridSize);
 });
