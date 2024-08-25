@@ -64,7 +64,7 @@ body {
 }
 
 header {
-  padding: 2rem;
+  padding: 2rem 2rem 0.5rem;
   font-size: 4rem;
   font-weight: 700;
 }
@@ -121,6 +121,5 @@ footer {
   padding: 1rem;
   font-size: 1.25rem;
   font-weight: 500;
-  background-color: var(--yellow);
-  color: var(--dark);
+  color: var(--yellow);
 }
