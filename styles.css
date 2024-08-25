@@ -82,12 +82,14 @@ section {
   border-radius: 0.25rem;
 }
 
+/* CONTROLS */
+
 .side#controls {
-  width: 25%;
+  width: 20%;
   height: 500px;
   background-color: var(--light);
   padding: 2rem;
-  color: var(--dark);
+  color: var(--blue);
   border: 0.25rem solid var(--blue);
 }
 
@@ -100,6 +102,27 @@ section {
 #grid-size-display {
   font-weight: bold;
 }
+
+button {
+  font-weight: 500;
+}
+
+#clear {
+  cursor: pointer;
+  padding: 0.5rem 4rem;
+  font-size: 1.25rem;
+  border-radius: 0.25rem;
+  border: 0.1rem solid var(--blue);
+  background-color: transparent;
+  color: var(--blue);
+  transition: 0.5s ease;
+}
+
+#clear:hover {
+  font-size: 1.5rem;
+}
+
+/* CANVAS */
 
 #canvas {
   min-width: 500px;
@@ -121,5 +144,4 @@ footer {
   padding: 1rem;
   font-size: 1.25rem;
   font-weight: 500;
-  color: var(--yellow);
 }

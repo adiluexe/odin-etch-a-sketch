@@ -1,6 +1,7 @@
 const canvas = document.querySelector("#canvas");
 const gridSizeSlider = document.querySelector("#grid-size-slider");
 const gridSizeDisplay = document.querySelector("#grid-size-display");
+const clearGridButton = document.querySelector("#clear");
 
 function createGrid(size) {
   canvas.innerHTML = "";
@@ -28,4 +29,11 @@ gridSizeSlider.addEventListener("input", () => {
   const gridSize = gridSizeSlider.value;
   gridSizeDisplay.textContent = `${gridSize} x ${gridSize}`;
   createGrid(gridSize);
+});
+
+clearGridButton.addEventListener("click", () => {
+  const squares = document.querySelectorAll(".grid-square");
+  squares.forEach((square) => {
+    square.style.backgroundColor = "";
+  });
 });
