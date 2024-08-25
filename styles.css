@@ -49,3 +49,55 @@ h6 {
   --red: #f06060;
   --yellow: #f3b562;
 }
+
+body {
+  min-height: 100vh;
+  font-family: "Kanit", sans-serif;
+  background-color: var(--dark);
+  color: var(--yellow);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+header {
+  padding: 2rem;
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+main {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+section {
+  margin: 1rem 2rem;
+  border-radius: 1rem;
+}
+
+.side#controls {
+  width: 40%;
+  min-height: 60vh;
+  background-color: var(--blue);
+}
+
+#canvas {
+  width: 60%;
+  min-height: 60vh;
+  background-color: var(--blue);
+}
+
+footer {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+  background-color: var(--yellow);
+  color: var(--dark);
+}
