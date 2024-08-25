@@ -55,7 +55,7 @@ body {
   min-height: 100vh;
   font-family: "Kanit", sans-serif;
   background-color: var(--dark);
-  color: var(--yellow);
+  color: var(--light);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -93,6 +93,10 @@ section {
   border: 0.25rem solid var(--blue);
 }
 
+.slide-controls {
+  font-size: 1.25rem;
+}
+
 #grid-size-slider {
   width: 60%;
   display: block;
@@ -105,20 +109,20 @@ section {
 
 button {
   font-weight: 500;
-}
-
-#clear {
   cursor: pointer;
-  padding: 0.5rem 4rem;
+  padding: 0.5rem 1rem;
+  width: 100%;
   font-size: 1.25rem;
   border-radius: 0.25rem;
   border: 0.1rem solid var(--blue);
   background-color: transparent;
   color: var(--blue);
+  margin-bottom: 1rem;
   transition: 0.5s ease;
 }
 
-#clear:hover {
+button:hover {
+  padding: 0.75rem 1rem;
   font-size: 1.5rem;
 }
 
@@ -141,7 +145,9 @@ button {
 
 footer {
   width: 100%;
-  padding: 1rem;
+  padding: 0.5rem;
   font-size: 1.25rem;
   font-weight: 500;
+  background-color: var(--blue);
+  color: var(--dark);
 }
